@@ -1,0 +1,64 @@
+@import './config';
+
+.books {
+  margin-bottom: $bottom-margin;
+
+  .col {
+    margin-bottom: $bottom-margin;
+  }
+}
+
+.book {
+  background-color: $color-light-gray;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: $bottom-margin;
+  margin-right: 1rem;
+  min-width: 160px;
+  width: 100%;
+
+  > .content {
+    border: 1px solid $color-gray;
+    border-top: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .image {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform $transition;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .buy {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buy .price {
+    margin-right: 0.5rem;
+  }
+}
